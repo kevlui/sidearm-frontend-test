@@ -1,0 +1,358 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F9F9F9;
+    font-size: 18px;
+}
+
+button {
+    background-color: #003057;
+    color: white; 
+    padding: 15px 20px 15px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+p { 
+    margin: 8px;
+}
+
+.icon-image {
+    display: flex;
+    padding: 0px 5px 0 0px;
+    align-items: center;
+}
+
+.logo-image {
+    min-width: 160px;
+    padding: 0px 10px 0 10px;
+    height: 72px;
+    background-image: url('../assets/logo-default.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+}
+
+/* NAV BAR */ 
+.nav-right{
+    margin-left: auto;
+    order: 2;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+}
+
+.nav-bar{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-bar .ham-icon{
+    display: none;
+    color: white;
+}
+
+.nav-bar .ham-icon:hover{
+    color: white;
+    border: none;
+}
+
+.nav-bar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+}
+
+.nav-bar a:hover{
+    border-bottom: 5px solid #003057;
+    color: #003057;
+}
+
+.nav-bar a:active {
+    border-bottom: 5px solid #003057;
+    color: #003057;
+}
+
+.nav-bar .nav-button
+{
+    border: none;
+}
+
+.profile-icon {
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin: 0 5px 0 0;
+}
+
+/* DROPDOWN */
+.dropdown-button {
+    background-color: #F9F9F9;
+    color: black;
+    display: flex;
+    border:none;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 130px;
+}
+
+.dropdown-button .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    line-height: 0;
+    padding: 0px 25px 0px 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-link { 
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-link a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+
+}
+
+.dropdown-link a:hover {
+    background-color: #f1f1f1;
+    border-bottom: none;
+    color: black;
+}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-link {display: flex; flex-direction: column;}
+
+
+
+.container{
+    margin: 24px !important;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: inset 0px -24px 0px #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    }
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 125%;
+    padding: 32px 24px 32px 24px;
+}
+
+.last-item{
+    margin-left: auto;
+    text-decoration: underline;
+    color: #003057;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(378px, max-content));
+    padding: initial;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+
+    width: 330px;
+    background: #F9F9F9;
+
+    flex: none;
+    order: 0;
+    margin-bottom: 24px;
+}
+
+.card:hover{
+    background-color: #F1F1F1;
+}
+
+.card p{
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 0px
+}
+
+.card-button{
+    background-color: white;
+    border: 1px solid #003057;
+    color: #003057;
+    font-weight: bold;
+    width: 199px;
+    height: 59px;
+}
+
+.card-button:hover{
+    background-color: #003057;
+    color: white;
+}
+
+
+.card-image{
+    width: 282px;
+    height: 158.63px;
+}
+
+.phantom{
+    visibility: hidden;
+}
+
+/* TABLETS */
+
+@media screen and (max-width: 970px) {
+    .card{
+        width: 208px;
+        padding: 24px 0 24px 0;
+        margin: 24px 0 0 0;
+    }
+
+    .card-image{
+        width: 160px;
+        height: 90px;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(auto-fit, minmax(208px, max-content));
+    }
+
+    .nav-bar {
+        background-color: #003057;
+        color: white;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .dropdown-button {
+        background-color: #003057;
+        color: white;
+    }
+
+    .dropdown-button .text #lastName {display: none;}
+    .dropdown-button .text {padding: 0 0 0 0;}
+    .dropdown-link a {font-size: 16px;}
+
+    .nav-bar a:not(#home) {display: none;}
+
+    .nav-bar a.ham-icon {display:  flex !important;}
+
+    .nav-right a {display: flex !important;}
+
+    .logo-image{background-image: url('../assets/logo-white.png');}
+
+}
+
+
+/*MOBILE*/
+
+@media screen and (max-width: 630px) {
+
+    body{
+        background-color: white;
+    }
+
+    .title{
+        font-size: 14px;
+        padding: 0 0 0 0;
+    }
+
+    .container{
+        padding: 0 0 0 0;
+    }
+    .nav-bar {
+        background-color: #003057;
+        color: white;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .dropdown-button {
+        background-color: #003057;
+        color: white;
+    }
+
+
+    .dropdown-button .text #lastName {display: none;}
+    .dropdown-button .text {padding: 0 0 0 0;}
+
+    .logo {width: 60px;}
+
+    .nav-button {display: none;}
+
+    .nav-bar a:not(#home) {display: none;}
+
+    .nav-bar a.ham-icon {display:  flex !important;}
+
+    .nav-right {padding: 10px 0 10px 0;}
+    .nav-right a {display: flex !important;}
+
+    .card{width: 327px;}
+    
+    .card-image{
+        width: 279px;
+        height: 156.94px;
+    }
+
+    .card-container{grid-template-columns: repeat(auto-fit, minmax(327px, max-content));}
+
+    .logo-image{
+        min-width: 72px;
+        background-image: url('../assets/logo-icon.png');
+    }
+
+}
+
+/*IPHONE 5*/
+
+@media screen and (max-width: 320px) {
+    .card{
+        width: 300px;
+        height: 359.94px;
+    }
+
+    .card-container{grid-template-columns: repeat(auto-fit, minmax( 300px, max-content));}
+
+    .dropdown-button .text {padding: 0 0 0 0;}
+    .logo-image{
+        min-width: 72px;
+        background-image: url('../assets/logo-icon.png');}
+}
